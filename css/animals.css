@@ -1,0 +1,148 @@
+.cover{
+    margin-bottom: 100px;
+}
+
+.unit-main{
+    height: 900px;
+}
+.title-main{
+    /* max-width: 550px; */
+    /* opacity: 0%;
+    animation: fadeIn 2s 7s forwards; */
+    font-family: "f1";
+    transform: translateX(-200px);
+    animation: tm-anm 1.5s forwards;
+}
+
+@keyframes tm-anm{
+    0%{transform: translateX(-150px);}
+    100%{transform: translateX(0);}
+}
+
+.unit-title{
+    text-align: center;
+    padding: 50px;
+    margin-bottom: 50px;
+}
+
+.btn-rtec div{
+    font-size: 90pt;
+    text-align: center;
+    width: 150px;
+    cursor: pointer;
+    font-family: f1;
+}
+.btn-rtec div:hover{
+    color: #ff8500;
+}
+
+.rtec-on{
+    font-size: 330px;
+    min-width: 230px;
+    text-align: center;
+    margin: 0 50px;
+    font-family: f1;
+    color: #8c8c8c;
+}
+
+h2{
+    font-size: 50pt;
+    font-family: f1;
+    color: #3fffbe;
+    letter-spacing: 5px;
+}
+.unit-title p{
+    font-family: f2;
+    font-size: 18pt;
+    color: #8c8c8c;
+    letter-spacing: 1px;
+    line-height: 14pt;
+}
+h3{
+    float: right;
+    font-family: f1;
+    color: #3fffcc;
+}
+
+
+.anm-img-box{
+    perspective: 800px;
+    margin-bottom: 200px;
+}
+.anm-img-box img{
+    margin: 0 22px;
+}
+.anm-img-box img:hover{
+    /* opacity: 20%; */
+}
+.anm-img-box img:nth-child(1){
+    transform: rotateY(-30deg) translateZ(-140px) translateX(-50px);
+}
+.anm-img-box img:nth-child(2){
+    transform: rotateY(-15deg) translateZ(-40px);
+}
+.anm-img-box img:nth-child(3){
+    transform: rotateY(0deg);
+}
+.anm-img-box img:nth-child(4){
+    transform: rotateY(15deg) translateZ(-40px);
+}
+.anm-img-box img:nth-child(5){
+    transform: rotateY(30deg) translateZ(-140px) translateX(50px);
+}
+
+.title-2{
+    border: 2px solid white;
+    margin-bottom: 30px;
+}
+.title-3{
+    border: 2px solid white;
+    margin-bottom: 30px;
+}
+
+.carousel-img {
+    height: 300px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.ci-b {
+    position: relative;
+    height: 300px;
+}
+.carousel-btn {
+    position: relative;
+    top: -18px;
+    opacity: 0;
+}
+.carousel-hd {
+    display: none;
+}
+
+
+#e-img {
+    animation: loop 12s linear;
+    animation-iteration-count: infinite;
+}
+@keyframes loop{
+    0%{transform: rotateZ(0deg);}
+    50%{transform: rotateZ(-180deg);}
+    100%{transform: rotateZ(-360deg);}
+}
+
+
+
+
+
+
+@media screen and (max-width: 992px) {
+    .carousel-hd {
+        display: block;
+    }
+    h3 {
+        float: none;
+    }
+    .non9{
+        display: none;
+    }
+}

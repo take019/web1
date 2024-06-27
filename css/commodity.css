@@ -1,0 +1,100 @@
+.unit-l{
+    height: 80vh;
+    position: relative;
+}
+.img-main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border: 1px solid white;
+    border-radius: 60px;
+}
+.img-other{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+.img-other li {
+    margin: 20px 0;
+}
+.quantity{
+    position: absolute;
+    bottom: 1%;
+    left: 12%;
+}
+.quantity button{
+    font-size: 30pt;
+    border-radius: 30px;
+    line-height: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    color: black;
+    margin: 0 25px;
+}
+
+.quantity p {
+    font-size: 28pt;
+    font-family: f2b;
+    line-height: 50px;
+    height: 50px;
+    width: 75px;
+    text-align: center;
+    background-color: white;
+    color: black;
+    border-radius: 3px;
+}
+
+
+
+.unit-r{
+    padding-left: 120px;
+    padding-top: 12vh;
+    position: relative;
+}
+h1{
+    font-size: 36pt;
+    font-family: f2b;
+}
+.cart-btn{
+    position: absolute;
+    bottom: 0%;
+    right: 35%;
+    font-size: 28pt;
+    padding: 10px 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 100px;
+    font-family: f3;
+    background-color: #3fffbe;
+    color: black;
+}
+.price-1 {
+    font-family: f3;
+    color: #ff8500;
+    font-size: 30pt;
+    margin-right: 30px;
+}
+.price-2 {
+    font-family: f2;
+    font-size: 20pt;
+    color: #8c8c8c;
+}
+.sele {
+    font-family: f2;
+    font-size: 11pt;
+    color: #8c8c8c;
+    letter-spacing: 5px;
+}
+.topBtn {
+    margin-top: 150px;
+    position: relative;
+    z-index: 5;
+}
+.topBtn a {
+    color: #8c8c8c;
+    font-family: f2;
+    font-size: 24pt;
+}

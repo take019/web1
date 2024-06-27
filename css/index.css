@@ -1,0 +1,190 @@
+
+
+
+.title-main{
+    max-width: 660px;
+    /* position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%); */
+    opacity: 0%;
+    animation: fadeIn 2s 4s forwards;
+    font-family: "f1";
+}
+.title-main div{
+    letter-spacing: 5px;
+}
+.title-unit{
+    width: 720px;
+    /* position: absolute;
+    top: 50%;
+    transform: translateY(-15%); */
+}
+h1{
+    font-size: 78px;
+}
+h2{
+    font-size: 77px;
+    margin-bottom: 8px;
+    font-family: f2;
+    color: #8c8c8c;
+}
+h3{
+    font-size: 50pt;
+    margin-bottom: 25px;
+    color: #3fffbe;
+    font-family: "f1";
+    letter-spacing: 8px;
+}
+
+.title-unit p{
+    font-family: f2;
+    font-size: 18pt;
+}
+
+
+.anime-tyIn{
+    animation: tyIn .8s  forwards;
+}
+
+@keyframes fadeIn{
+    from {opacity: 0%;}
+    to{opacity: 100%;}
+}
+@keyframes tyIn{
+    from{transform:translateY(35%);}
+    to{transform:translateY(0);}
+}
+.glass {
+    height: 340px;
+    width: 100%;
+    padding: 0;
+    background-image: url(/img/index/草地.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: -200px;
+    z-index: -1;
+}
+
+
+.imgbox{
+    max-width: 100%;
+    height: auto;
+    /* width: 600px;
+    height: 410px; */
+    /* position: absolute; */
+    /* left: 50%; */
+    /* top: 50%;
+    transform:translateY(50%); */
+    z-index: 2;
+}
+.img-book{
+    border: 1px solid red;
+    width: 650px;
+    height: 460px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.img-cow{
+    position: absolute;
+    bottom: 0;
+    left: -220px;
+    animation: cow 8s forwards;
+    z-index: 1;
+}
+@keyframes cow{
+    0%{bottom: 0; left: -220px; transform: translateX(0);}
+    70%{bottom: 0; left: 50%; transform: translateX(-50%);}
+    75%{bottom: 0; left: 50%; transform: translateX(-50%);}
+    /* 100%{bottom: 62%; left: 50%; transform: translateX(-50%);} */
+}
+.img-ufo {
+    position: absolute;
+    left: 640px;
+    top: -300px;
+    transform: scale(20%);
+    animation: ufo 7s linear 1s forwards;
+}
+@keyframes ufo{
+    0%{left: 640px; top: -300px; transform: scale(20%);}
+    25%{left: 0; top: -115px; transform: scale(40%);}
+    50%{left: 580px; top: -20px; transform: scale(70%);}
+    70%{left: 280px; top: 80px; transform: scale(100%);}
+    100%{left: 280px; top: 80px; transform: scale(100%);}
+}
+
+
+
+.anm-choose li img{
+    width: 240px;
+    height: 100px;
+    margin: 25px 0;
+    cursor: pointer; 
+}
+.anm-choose li img:hover{
+    transform: scale(110%);
+}
+
+
+
+
+
+
+.unit-main{
+    height: 800px;
+}
+
+.unit-1{
+    height: 100%;
+}
+.unit-2{
+    height: 100%;
+}
+.unit-3{
+    height: 100%;
+}
+.unit-4{
+    height: 100%;
+}
+.unit-5{
+    height: 100%;
+}
+.unit-footer{
+    height: 100%;
+}
+
+
+
+
+
+@media screen {
+    
+}
+@media screen and (max-width: 768px) {
+    .title-main{
+        position: absolute;
+        /* color: aqua; */
+        bottom: 35%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 78%;
+    }
+}
+
+.btn-sm{
+    color: black;
+    background-color: #ff8500;
+    font-size: 18pt;
+    font-family: f3;
+    padding: 15px;
+    border-radius: 30px;
+}
+.btn-sm:hover{
+    background-color: #1a1e1c;
+    border: 1px solid #3fffbe;
+    color: white;
+}

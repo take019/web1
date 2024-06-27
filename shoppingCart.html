@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>購物車</title>
+    <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.min.css">
+    <script src="bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/shoppingCart.css">
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="padding: 0;">
+        <div class="container">
+          <div class="float-start logo"><a href="#" target="_blank" ><img src="/p.jpg" alt="" width="40" height="40">ET LEARN</a></div>
+          <button class="navbar-toggler bdr" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0"></ul>
+            <form class="d-flex">
+              <ul class="bd">
+                <li class="fr"><a href="qanda.html"><div class="nav-btn">FAQ</div></a></li>
+                <li class="fr"><a href="buy.html"><div class="nav-btn">BUY</div></a></li>
+                <li class="fr"><a href="animals.html"><div class="nav-btn">ANIMALS</div></a></li>
+                <li class="fr"><a href="landing.html"><div class="nav-btn">LANDING</div></a></li>
+                <li class="fr"><a href="index.html"><div class="nav-btn">HOME</div></a></li>
+              </ul>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+    <div class="container pr" style="margin-top: 150px;">
+        <h1>shopping cart</h1>
+        <img src="/img/shoppingCart/結帳頁面購物車圖片_網站版.png" alt="" class="imgbox mx-auto d-block img-fluid sc-img">
+
+        <div class="item-box ">
+
+            <div class="row item ">
+                <div class="col-lg-6 item-l d-flex align-items-center">
+                    <img src="/img/commodity/MIMO生物安置縮放箱 sg-f227代言款.png" alt="" width="80" height="80">
+                    <h3>Consciousness Shock</h3>
+                </div>
+                <div class="col-lg-6 item-r d-flex align-items-center justify-content-end">
+                    <h4>$555,846</h4>
+                    <button id="btn1-d" style="background-color: gray;">-</button>
+                    <p id="nub1">1</p>
+                    <button id="btn1-u">+</button>
+                </div>
+            </div>
+
+            <div class="row item">
+                <div class="col-lg-6 item-l d-flex align-items-center">
+                    <img src="/img/commodity/MK4捕捉器.png" alt="" width="80" height="80">
+                    <h3>Consciousness Shock</h3>
+                </div>
+                <div class="col-lg-6 item-r d-flex align-items-center justify-content-end">
+                    <h4>$555,846</h4>
+                    <button id="btn2-d" style="background-color: gray;">-</button>
+                    <p id="nub2">1</p>
+                    <button id="btn2-u">+</button>
+                </div>
+            </div>
+
+            <div class="row item">
+                <div class="col-lg-6 item-l d-flex align-items-center">
+                    <img src="/img/commodity/Sinka經典盤行飛碟 二代豪華版.png" alt="" width="80" height="80">
+                    <h3>商品名稱</h3>
+                </div>
+                <div class="col-lg-6 item-r d-flex align-items-center justify-content-end">
+                    <h4>$555,846</h4>
+                    <button id="btn3-d" style="background-color: gray;">-</button>
+                    <p id="nub3">1</p>
+                    <button id="btn3-u">+</button>
+                </div>
+            </div>
+
+            <script>
+                $(document).ready(function () {
+                    $("#btn1-d").click(function () {
+                        nub = $("#nub1").text();
+                        console.log("ddd");
+                        if (nub > 1) {
+                            nub--;
+                            $("#nub1").text(nub);
+                        } else {
+                            $("#btn1-d").css("background", "gray");
+                        }
+                    });
+                    $("#btn1-u").click(function () {
+                        $("#btn1-d").css("background", "black");
+                        nub = $("#nub1").text();
+                        console.log("uuu");
+                        nub++;
+                        $("#nub1").text(nub);
+                    });
+
+
+                    $("#btn2-d").click(function () {
+                        nub = $("#nub2").text();
+                        console.log("ddd");
+                        if (nub > 1) {
+                            nub--;
+                            $("#nub2").text(nub);
+                        } else {
+                            $("#btn2-d").css("background", "gray");
+                        }
+                    });
+                    $("#btn2-u").click(function () {
+                        $("#btn2-d").css("background", "black");
+                        nub = $("#nub2").text();
+                        console.log("uuu");
+
+                        nub++;
+                        $("#nub2").text(nub);
+                    });
+
+
+                    $("#btn3-d").click(function () {
+                        nub = $("#nub3").text();
+                        console.log("ddd");
+                        if (nub > 1) {
+                            nub--;
+                            $("#nub3").text(nub);
+                        } else {
+                            $("#btn3-d").css("background", "gray");
+                        }
+                    });
+                    $("#btn3-u").click(function () {
+                        $("#btn3-d").css("background", "black");
+                        nub = $("#nub3").text();
+                        console.log("uuu");
+
+                        nub++;
+                        $("#nub3").text(nub);
+                    });
+                });
+
+                
+            </script>
+
+
+
+
+
+            <ul class="d-flex pgn justify-content-center">
+                <li><button>1</button></li>
+                <li><button>2</button></li>
+                <li><button>3</button></li>
+            </ul>
+
+            <div class="d-flex align-items-end justify-content-end" style="margin-top: 80px; padding-right: 120px;">
+                <p class="" style="font-family: f2b; font-size: 14pt; color: #8c8c8c; margin-right: 20px;">TATAL</p>
+                <h2 class="">$555,789</h2>
+                <button class="go-btn ">BUY!!</button>
+            </div>
+
+        </div>
+
+
+        <!-- <img src="/p.jpg" alt=""> -->
+    </div>
+
+</body>
+
+</html>

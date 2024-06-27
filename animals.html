@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIMALS</title>
+    <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.min.css">
+    <script src="bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/animals.css">
+
+</head>
+<body style="overflow-x: hidden;">
+
+  <!-- 移動至最上面 -->
+  <div style="position: fixed; bottom: 50px; right: 50px; z-index: 5;">
+    <button class="btn-up" onclick="btnUp()">UP</button>
+  </div>
+  <script>
+    function btnUp(){
+    const element = document.documentElement;
+    let y = element.scrollTop;
+    element.scrollTop=0;
+    }
+  </script>
+  
+  <!-- 導航欄 -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="padding: 0;">
+    <div class="container">
+      <div class="float-start logo"><a href="index.html" target="_blank" ><img src="/img/logo.png" alt="" width="50" height="40">ET LEARN</a></div>
+      <button class="navbar-toggler bdr" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0"></ul>
+        <form class="d-flex">
+          <ul class="bd">
+            <li class="fr"><a href="qanda.html"><div class="nav-btn">FAQ</div></a></li>
+            <li class="fr"><a href="buy.html"><div class="nav-btn">BUY</div></a></li>
+            <li class="fr"><a href="animals.html"><div class="nav-btn">ANIMALS</div></a></li>
+            <li class="fr"><a href="landing.html"><div class="nav-btn">LANDING</div></a></li>
+            <li class="fr"><a href="index.html"><div class="nav-btn">HOME</div></a></li>
+          </ul>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 主標題區 -->
+  <div class="container cover">
+    <div class="row unit-main">
+        <div class="col-md-5 bd">
+            <div class="wh100 d-flex align-items-center justify-content-center">
+                <div class="title-main bd fr">
+                    <div class="display-1" style="letter-spacing: 5px;"><span class="display-5">The</span> v<span class="display-5">alue and</span><br> i<span class="display-5">ntroduction of</span><br> l<span class="display-5">ife on</span> e<span class="display-5">arth</span></div>
+                    <p style="font-family: f2;color: #8c8c8c; font-size: 18pt;">
+                      Get to know your favorite creature and understand<br>
+                      its value more clearly.<br>
+                      Here is a detailed introduction to various crea-<br>
+                      tures on earth.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-7 bd">
+          <img class="pa imgbox mx-auto d-block img-fluid" style="top: 21%; right: 445px;" width="500" src="/img/animals/動物走路.gif" alt="">
+          <img class="pa imgbox mx-auto d-block img-fluid" style="right:-260px; top: 30%;" width="1200" src="/img/animals/地球_順時針轉.png" alt="" id="e-img">
+        </div>
+    </div>
+  </div>
+
+  <div style="background-image: url(/img/vector-seamless-background-triangulation-polygonal-mesh-spider-loop-texture-208059220.jpg);">
+
+
+
+
+  <div class="container unit-title ">
+    <h2>CREATURES</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, possimus quod, ipsam, consequatur enim repellat rem debitis magni quis earum ex perferendis tempore quidem hic harum delectus rerum! Ut, neque!</p>
+  </div>
+
+  <div class="container d-flex justify-content-center anm-img-box">
+    <img id="img-d" src="/img/animals/卡牌/正面/DOG.png" alt="" width="200" height="350">
+    <img id="img-mk" src="/img/animals/卡牌/正面/MONKY.png" alt="" width="200" height="350">
+    <img id="img-su" src="/img/animals/卡牌/正面/su.6.png" alt="" width="200" height="350">
+    <img id="img-p" src="/img/animals/卡牌/正面/兩腳獸.png" alt="" width="200" height="350">
+    <img id="img-d2" src="/img/animals/卡牌/正面/DOG.png" alt="" width="200" height="350">
+  </div>
+
+
+
+  <!-- 卡牌切換 -->
+  <script>
+    $(document).ready(function(){
+      $("#img-d").mouseenter(function(){
+        $("#img-d").attr("src", "/img/animals/卡牌/反面/DOG.png");
+      });
+      $("#img-d").mouseout(function(){
+        $("#img-d").attr("src", "/img/animals/卡牌/正面/DOG.png");
+      });
+
+      $("#img-mk").mouseenter(function(){
+        $("#img-mk").attr("src", "/img/animals/卡牌/反面/MONKY.png");
+      });
+      $("#img-mk").mouseout(function(){
+        $("#img-mk").attr("src", "/img/animals/卡牌/正面/MONKY.png");
+      });
+
+      $("#img-su").mouseenter(function(){
+        $("#img-su").attr("src", "/img/animals/卡牌/反面/COW.png");
+      });
+      $("#img-su").mouseout(function(){
+        $("#img-su").attr("src", "/img/animals/卡牌/正面/su.6.png");
+      });
+
+      $("#img-p").mouseenter(function(){
+        $("#img-p").attr("src", "/img/animals/卡牌/反面/兩腳獸.png");
+      });
+      $("#img-p").mouseout(function(){
+        $("#img-p").attr("src", "/img/animals/卡牌/正面/兩腳獸.png");
+      });
+
+      $("#img-d2").mouseenter(function(){
+        $("#img-d2").attr("src", "/img/animals/卡牌/反面/DOG.png");
+      });
+      $("#img-d2").mouseout(function(){
+        $("#img-d2").attr("src", "/img/animals/卡牌/正面/DOG.png");
+      });
+    });
+  </script>
+
+
+
+  <div class="container unit-title">
+    <h2>FLOW CHART</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor nulla accusantium sequi quaerat ea cum corrupti repellendus illo, natus vel asperiores veritatis impedit iusto explicabo voluptas, maxime ab, magnam tempora.</p>
+  </div>
+
+
+  <div class="container d-flex justify-content-center btn-rtec align-items-center bd">
+    <img src="/img/animals/3_FLOW CHART 四步驟/捕捉生物4步驟_小飛碟.png" alt="" width="100" height="100">
+    <div id="rtec-r">R</div>
+    <div id="rtec-t">T</div>
+    <div id="rtec-e">E</div>
+    <div id="rtec-c">C</div>
+    <img src="/img/animals/3_FLOW CHART 四步驟/捕捉生物4步驟_小外星人.png" alt="" width="100" height="100">
+  </div>
+
+  <div class="container d-flex justify-content-center align-items-center bd" style="margin-bottom: 180px;">
+    <img src="/img/animals/3_FLOW CHART 四步驟/(1)R查閱生物資料.jpg" alt="" width="300" height="250" id="rtec-img">
+    <div class="rtec-on">R</div>
+    <div style="width: 600px;">
+        <div id="rtec-t-div" style="font-family: f2b; font-size: 25pt;">Research Biological Data</div>
+        <p id="rtec-t-p" style="font-family: f2; font-size: 18pt;">For the initial pre-work, Dr. Teskin, who specializes in alien biology, carefully prepared the biological data sheet for the team. For your own safety,
+          you must confirm the biological information, otherwise you will be responsible for the consequences...</p>
+    </div>
+  </div>
+  <script>
+    $(document).ready(function(){
+      $("#rtec-r").mouseenter(function(){
+        $(".rtec-on").text("R");
+        $("#rtec-t-div").text("Research Biological Data");
+        $("#rtec-t-p").text("For the initial pre-work, Dr. Teskin, who specializes in alien biology, carefully prepared the biological data sheet for the team. For your own safety,you must confirm the biological information, otherwise you will be responsible for the consequences...");
+        $("#rtec-img").attr("src", "/img/animals/3_FLOW CHART 四步驟/(1)R查閱生物資料.jpg");
+      });
+      $("#rtec-t").mouseenter(function(){
+        $(".rtec-on").text("T");
+        $("#rtec-t-div").text("Confirm Tool Condition");
+        $("#rtec-t-p").text("You also don’t want to be sluggish when handling animals with tools that aren’t cleaned or used too many times and the abduction process isn’t going well?");
+        $("#rtec-img").attr("src", "/img/animals/3_FLOW CHART 四步驟/(2)T確認工具狀況.jpg");
+      });
+      $("#rtec-e").mouseenter(function(){
+        $(".rtec-on").text("E");
+        $("#rtec-t-div").text("Confirm The Surrounding Environment");
+        $("#rtec-t-p").text("Make sure that the surrounding area is harmless to you (for example, people from Orta planets will fester when they touch dog fur...), you need to confirm whether there are such creatures as dogs in the environment. For your safety, please do it!");
+        $("#rtec-img").attr("src", "/img/animals/3_FLOW CHART 四步驟/(3)E確認周遭環境.jpg");
+      });
+      $("#rtec-c").mouseenter(function(){
+        $(".rtec-on").text("C");
+        $("#rtec-t-div").text("Implement Capture");
+        $("#rtec-t-p").text("After the above three points are confirmed and executed correctly, of course, it’s time to feast on the capture research! Each star has a different capture method, and we provide a variety of personalized tools to help you execute smoothly.");
+        $("#rtec-img").attr("src", "/img/animals/3_FLOW CHART 四步驟/(4)C實施捕捉.jpg");
+      });
+    });
+  </script>
+
+    <div class="container bd d-flex flex-row title-2" >
+      <div class="row wh100">
+        <div class="col-lg-3">
+          <h3 class="display-1">NOTICE:</h3>
+        </div>
+        <div class="col-lg-9">
+          <p class="" style="font-family: f2; font-size: 18pt;">• Article 9 : When transporting animals, attention should be paid to their food, drink- i n g wa t e r, exc re t i o n , e n v i ro n m e n t a n d s a f e t y, a n d t o avo i d s h o c k , p a i n o r i n j u r y t o a n i m a l s
+            Hazards.<br>
+            • ts means of transport, methods and other matters to be followed during transport
+            The regulations shall be prescribed by the central competent authority.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container bd title-3">
+      <p style="font-family: f2; font-size: 18pt; padding: 20px;">Article 17 : After scientific application, the condition of experimental animals should be checked immediatelysituation, if they
+        have lost parts of their limbs or are still in pain,
+        Those suffering enough to affect their quality of life should be treated immediately with the most kill it in a less painful way.</p>
+    </div>
+
+    <div class="container non9">
+      <div class="row">
+        <div class="col-4"><img class="imgbox mx-auto d-block img-fluid" style="max-height: 480px;" src="/img/animals/4_NOTICE 注意/01左上說明_動物麻醉.jpg" alt=""></div>
+        <div class="col-3"><img class="imgbox mx-auto d-block img-fluid" style="max-height: 480px;" src="/img/animals/4_NOTICE 注意/02中上說明_護士.jpg" alt=""></div>
+        <div class="col-5"><img class="imgbox mx-auto d-block img-fluid" style="max-height: 480px;" src="/img/animals/4_NOTICE 注意/03右上說明_手術台.jpg" alt=""></div>
+      </div>
+    </div>
+
+
+    <!-- 自動滾動圖片 -->
+    <div id="carouselExampleControls " class="carousel slide  carousel-hd" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active ci-b">
+          <img src="/img/animals/4_NOTICE 注意/01左上說明_動物麻醉.jpg" class="d-block carousel-img" alt="...">
+        </div>
+        <div class="carousel-item ci-b">
+          <img src="/img/animals/4_NOTICE 注意/02中上說明_護士.jpg" class="d-block carousel-img" alt="...">
+        </div>
+        <div class="carousel-item ci-b">
+          <img src="/img/animals/4_NOTICE 注意/03右上說明_手術台.jpg" class="d-block carousel-img" alt="...">
+        </div>
+        <div class="carousel-item ci-b">
+          <img src="/img/animals/4_NOTICE 注意/04左下說明_手術燈.jpg" class="d-block carousel-img" alt="...">
+        </div>
+        <div class="carousel-item ci-b">
+          <img src="/img/animals/4_NOTICE 注意/05說明_醫生.jpg" class="d-block carousel-img" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon carousel-btn" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon carousel-btn" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="container">
+      <img src="/img/animals/4_NOTICE 注意/中間大圖_含指示線.png" alt="" class="imgbox mx-auto d-block img-fluid" >
+    </div>
+
+    <div class="container non9">
+      <div class="row">
+        <div class="col-4"><img class="imgbox mx-auto d-block img-fluid" style="max-height: 480px;" src="/img/animals/4_NOTICE 注意/04左下說明_手術燈.jpg" alt=""></div>
+        <div class="col-2"></div>
+        <div class="col-6"><img class="imgbox mx-auto d-block img-fluid" style="max-height: 480px;" src="/img/animals/4_NOTICE 注意/05說明_醫生.jpg" alt=""></div>
+      </div>
+    </div>
+
+    <div class="container bd d-flex flex-row title-2" style="margin-bottom: 200px; margin-top: 80px;">
+      <div class="row">
+        <div class="col-lg-3">
+          <h3 class="display-1" style="color: white;">SAFE:</h3>
+        </div>
+        <div class="col-lg-9">
+          <p class="" style="font-family: f2; font-size: 18pt;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nam ipsum dolor nulla unde consequuntur tempora, blanditiis eligendi consectetur. Assumenda placeat nostrum obcaecati id voluptas iure voluptates, repudiandae maxime temporibus?</p>
+        </div>
+      </div>
+      
+      
+    </div>
+
+
+
+    <div class="container pageButtom">
+      <div class="row">
+        <div class="col-lg-6 bd" style="padding: 0 50px; height: 300px;">
+          <p style="color: #3fffbe; font-family: f2b; font-size: 18pt; text-align: center; margin: 28px 0;">CONTACT</p>
+          <form action="" class="ipt">
+            <div class="row" style="height: 135px;">
+              <div class="col-6 bd">
+                <input class="iptbox" type="text" placeholder="NAME">
+                <input class="iptbox" type="text" placeholder="ET-MAIL">
+                <input class="iptbox" type="text" placeholder="TITLE" style="margin-bottom: 0;">
+              </div>
+              <div class="col-6 bd">
+                <textarea class="iptbox wh100" name="message" style="resize: none;" placeholder="MESSAGE"></textarea>
+              </div>
+            </div>
+          </form>
+          <div class=" d-flex justify-content-end" style="margin-top: 20px;"><input type="submit" value="SUBMIT" style="background-color: #3fffbe; color: black; font-size: 12pt; font-family: f3; padding:10px 15px; border-radius: 30px;"></div>
+        </div>
+        <div class="col-lg-6 bd" style="height: 300px;">
+          <p style="color: #3fffbe; font-family: f2b; font-size: 18pt; text-align: center; margin: 28px 0;">MORE</p>
+          <div class="bd" style="font-size: 18pt; font-family: f2;">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est fugit voluptatum doloribus a dicta? Magni ab odio cum suscipit delectus? Impedit et ullam aperiam neque sapiente aliquid nam minus animi!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum facilis ipsa libero excepturi, magni eligendi distinctio labore. A nostrum necessitatibus officia debitis alias, iusto excepturi omnis quia vel, laborum hic!
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container-fuld pr">
+      <img src="/img/頁腳_月球表面.png" alt="" class="imgbox mx-auto d-block img-fluid" style="position:absolute; bottom: 0; z-index: -5;">
+    </div>
+    
+    <div class="container bd">
+      <hr style="border: 1px white solid; opacity: 20%;">
+      <p style="padding: 40px 0; color: #8c8c8c; font-family: F2; font-size: 16pt; ">© 2022 Biological Research Group . All rights reserved.</p>
+    </div>
+
+
+  </div>
+
+</body>
+</html>

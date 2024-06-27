@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block Base Station Pro Max2.0</title>
+    <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.min.css">
+    <script src="bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/commodity.css">
+
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="padding: 0;">
+    <div class="container">
+      <div class="float-start logo"><a href="#" target="_blank" ><img src="/img/logo.png" alt="" width="50" height="40">ET LEARN</a></div>
+      <button class="navbar-toggler bdr" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0"></ul>
+        <form class="d-flex">
+          <ul class="bd">
+            <li class="fr"><a href="qanda.html"><div class="nav-btn">FAQ</div></a></li>
+            <li class="fr"><a href="buy.html"><div class="nav-btn">BUY</div></a></li>
+            <li class="fr"><a href="animals.html"><div class="nav-btn">ANIMALS</div></a></li>
+            <li class="fr"><a href="landing.html"><div class="nav-btn">LANDING</div></a></li>
+            <li class="fr"><a href="index.html"><div class="nav-btn">HOME</div></a></li>
+          </ul>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+    <div class="container topBtn">
+        <div class="row">
+            <div class="col-6"><a href="buy.html">BACK TO STORE</a></div>
+            <div class="col-6">
+              <img src="/img/shoppingCart/SHOP.gif" alt="" width="80" height="80" class="fr" style="transform: translateY(-20px);">
+              <a href="shoppingCart.html" class="fr">SHOPPING CART</a>
+            </div>
+        </div>
+
+
+
+    </div>
+    <div class="container bd" style="margin-top: -80px;">
+        <div class="row">
+
+            <div class="col-lg-5 unit-l bd">
+                <img src="/img/commodity/阻斷基地台 Pro Max2.0.png" alt="" width="450" height="500" class="img-main">
+                <ul class="img-other">
+                    <li><button><img src="/img/commodity/ZE.U.2.4 迴旋鏢型飛碟.png" alt="" width="80" height="80"></button></li>
+                    <li><button><img src="/img/commodity/MK4捕捉器.png" alt="" width="80" height="80"></button></li>
+                    <li><button><img src="/img/commodity/U-N1®微型具象掃描儀.png" alt="" width="80" height="80"></button></li>
+                    <li><button><img src="/img/commodity/記憶消除激光裝置.png" alt="" width="80" height="80"></button></li>
+                </ul>
+                <div style="position: absolute; bottom: 0; left: 120px;">
+                    <div>
+                        <p><span class="price-1">$168,750</span><span class="price-2">$250,000</span></p>
+                    </div>
+                    <div>
+                        <p class="sele">SELE 2.2M</p>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="col-lg-7 unit-r bd">
+                <h1>Block Base Station <br>Pro Max2.0</h1>
+                <hr>
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptatum enim illum earum expedita minus distinctio praesentium aspernatur fuga iure harum sit vel adipisci, velit ab tenetur sed in reiciendis.</div>
+                <hr>
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptatum enim illum earum expedita minus distinctio praesentium aspernatur fuga iure harum sit vel adipisci, velit ab tenetur sed in reiciendis.</div>
+                
+                <div class="quantity bd d-flex">
+                    <button id="btn-d" style="background-color: gray;">-</button>
+                    <p id="nub">1</p>
+                    <button id="btn-u">+</button>
+                </div>
+
+                <script>
+                    $(document).ready(function(){
+                      $("#btn-d").click(function(){
+                        nub=$("#nub").text();
+                        if(nub>1){
+                            nub--;
+                            $("#nub").text(nub);
+                        }else{
+                            $("#btn-d").css("background","gray");
+                        }
+                        
+                      });
+                      $("#btn-u").click(function(){
+                        $("#btn-d").css("background","white");
+                        nub=$("#nub").text();
+                        nub++;
+                        $("#nub").text(nub);
+                      });
+                    });
+                    </script>
+                <button class="cart-btn">ADD</button>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <div class="container pageButtom">
+      <div class="row">
+        <div class="col-lg-6 bd" style="padding: 0 50px; height: 300px;">
+          <p style="color: #3fffbe; font-family: f2b; font-size: 18pt; text-align: center; margin: 28px 0;">CONTACT</p>
+          <form action="" class="ipt">
+            <div class="row" style="height: 135px;">
+              <div class="col-6 bd">
+                <input class="iptbox" type="text" placeholder="NAME">
+                <input class="iptbox" type="text" placeholder="ET-MAIL">
+                <input class="iptbox" type="text" placeholder="TITLE" style="margin-bottom: 0;">
+              </div>
+              <div class="col-6 bd">
+                <textarea class="iptbox wh100" name="message" style="resize: none;" placeholder="MESSAGE"></textarea>
+              </div>
+            </div>
+          </form>
+          <div class=" d-flex justify-content-end" style="margin-top: 20px;"><input type="submit" value="SUBMIT" style="background-color: #3fffbe; color: black; font-size: 12pt; font-family: f3; padding:10px 15px; border-radius: 30px;"></div>
+        </div>
+        <div class="col-lg-6 bd" style="height: 300px;">
+          <p style="color: #3fffbe; font-family: f2b; font-size: 18pt; text-align: center; margin: 28px 0;">MORE</p>
+          <div class="bd" style="font-size: 18pt; font-family: f2;">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est fugit voluptatum doloribus a dicta? Magni ab odio cum suscipit delectus? Impedit et ullam aperiam neque sapiente aliquid nam minus animi!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum facilis ipsa libero excepturi, magni eligendi distinctio labore. A nostrum necessitatibus officia debitis alias, iusto excepturi omnis quia vel, laborum hic!
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container-fuld pr">
+      <img src="/img/頁腳_月球表面.png" alt="" class="imgbox mx-auto d-block img-fluid" style="position:absolute; bottom: 0; z-index: -5;">
+    </div>
+    
+    <div class="container bd">
+      <hr style="border: 1px white solid; opacity: 20%;">
+      <p style="padding: 40px 0; color: #8c8c8c; font-family: F2; font-size: 16pt; ">© 2022 Biological Research Group . All rights reserved.</p>
+    </div>
+
+
+</body>
+</html>

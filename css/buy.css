@@ -1,0 +1,130 @@
+.item{
+    width: 450px;
+    height: 580px;
+}
+.item-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.item h3 {
+    position: absolute;
+    bottom: 8%;
+    left: 6%;
+}
+h2 {
+    font-family: f1;
+    font-size: 28pt;
+    color: black;
+    margin-bottom: 22px;
+}
+h3{
+    font-size: 24pt;
+}
+h4{
+    font-size: 26pt;
+    color: #3fffbe;
+}
+.item h4{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+}
+.cart img {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+}
+.item-box li{
+    float: left;
+    margin-right: 80px;
+    margin-bottom: 60px;
+}
+
+
+
+
+.classification{
+    width: 300px;
+    height: 660px;
+    border: 2px #3fffbe solid;
+    background-color: white;
+    position: fixed;
+    right: -300px;
+    bottom: 6%;
+    z-index: 5;
+    padding-top: 40px;
+    padding-left: 40px;
+    border-radius: 50px 0 0 50px;
+}
+.cf-of-btn-on{
+    animation: btn-on .5s  forwards;
+}
+.cf-of-btn-off{
+    animation: btn-off .5s  forwards;
+}
+@keyframes btn-on{
+    from{right: -300px;}
+    to{right: 0;}
+}
+@keyframes btn-off{
+    from{right: 0;}
+    to{right: -300px;}
+}
+
+.cf-title{
+    width: 100px;
+    height: 100px;
+    border: 3px black solid;
+    padding: 12px 8px 0px 22px;
+    font-size: 18pt;
+    margin-bottom: 30px;
+    color: black;
+    background-color: #3fffbe;
+}
+.classification hr {
+    border: 1px black dashed ;
+    opacity: 100;
+    margin: 12px 0;
+}
+.cf-btn {
+    font-size: 18pt;
+    margin: 5px 0;
+    width: 100%;
+    text-align: left;
+    border-radius: 19px 0 0 19px;
+    padding-left: 15px;
+    color: black;
+    font-family: f2b;
+}
+.cf-btn:hover{
+    background-color: #3fffbe;
+}
+.cf-of-btn{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 50px 50px 50px 0;
+    border-color: transparent #3fffbe transparent transparent;
+    position: absolute;
+    left: -50px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.gocart{
+    background-color: #3fffbe;
+    color: black;
+    padding: 8px;
+    width: 250px;
+    font-size: 16pt;
+    height: 60px;
+    border-radius: 30px;
+    position: absolute;
+    left: 50%;
+    bottom: -78px;
+    transform: translateX(-50%)translateY(-145%);
+}

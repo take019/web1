@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUY</title>
+    <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.min.css">
+    <script src="bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/buy.css">
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="vue.min.js"></script>
+
+</head>
+
+<body>
+    <div style="position: fixed; bottom: 50px; right: 50px; z-index: 10;">
+        <button class="btn-up" onclick="btnUp()">移至最上面</button>
+    </div>
+    <script>
+      function btnUp(){
+      const element = document.documentElement;
+      let y = element.scrollTop;
+      element.scrollTop=0;
+      }
+    </script>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="padding: 0;">
+        <div class="container">
+
+            <div class="float-start logo"><a href="index.html"><img src="/p.jpg" alt="" width="50" height="50"></a>
+            </div>
+
+            <button class="navbar-toggler bdr" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0"></ul>
+                <form class="d-flex">
+                    <ul>
+                        <li class="fr"><a href="qanda.html">
+                                <div class="nav-btn">Q&A</div>
+                            </a></li>
+                        <li class="fr"><a href="shop.html">
+                                <div class="nav-btn">BUY</div>
+                            </a></li>
+                        <li class="fr"><a href="animals.html">
+                                <div class="nav-btn">ANIMALS</div>
+                            </a></li>
+                        <li class="fr"><a href="landing.html">
+                                <div class="nav-btn">LANDING</div>
+                            </a></li>
+                        <li class="fr"><a href="index.html">
+                                <div class="nav-btn">HOME</div>
+                            </a></li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <hr style="border: 1px white solid; opacity: 100%; margin-top: 100px;">
+
+    <div class="container pr">
+        <img src="/img/shopping cart/購物車GIF_SHOP首頁上方的.gif" alt="" class="imgbox mx-auto d-block img-fluid" style="margin: 80px 0 150px 0;max-height: 750px;">
+        <button class="gocart"><a href="shoppingCart.html">進入購物車</a></button>
+    </div>
+
+    <div class="classification">
+        <div class="cf-title">商品分類</div>
+        <div class="cf-dc"></div>
+        <button class="cf-btn" data-filter="cf-1">工具分類1</button>
+        <hr>
+        <button class="cf-btn" data-filter="cf-2">工具分類2</button>
+        <hr>
+        <button class="cf-btn" data-filter="cf-3">工具分類3</button>
+        <hr>
+        <button class="cf-btn" data-filter="cf-4">工具分類4</button>
+        <hr>
+        <button class="cf-btn" data-filter="cf-5">工具分類5</button>
+        <hr>
+        <button class="cf-of-btn "></button>
+        <script>
+            $(".cf-of-btn").click(function () {
+                $(".classification").removeClass("cf-of-btn-off");
+                $(".classification").addClass("cf-of-btn-on");
+            });
+            // $(".cf-btn").click(function () {
+            //     $(".classification").removeClass("cf-of-btn-on");
+            //     $(".classification").addClass("cf-of-btn-off");
+            // });
+        </script>
+    </div>
+
+    <section id="product" >
+        <div class="container">
+            
+            <div class="row">
+                <div class="col-md-4 col-sm-6 product-item" v-for="item in product">
+                    <a v-bind:href="item.href" class="product-link" data-bs-toggle="modal">
+                        <div class="product-hover">
+                            <div class="product-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <!-- <img v-bind:src="item.imgSrc" alt="" width="300" height="300" class="item-img"> -->
+                    </a>
+                 <div v-bind:class="item.classname">
+                    <div class="item bd">
+                        <div class="bd pr" style="width: 100%; height: 75%;">
+                            <img type="button" v-bind:id="item.btnid" v-bind:src="item.imgSrc" alt="" width="300" height="300" >
+                            <h3>{{item.title}}</h3>
+                        </div>
+                        <div class="bd pr" style="width: 100%; height: 25%;">
+                            <h4>{{item.subtitle}}</h4>
+                            <button class="cart"><img src="/p.jpg" alt="" width="70" height="70"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!-- 
+    <div class="container">
+        <ul class="item-box grid" id="grid">
+            <li class="grid-item cf-1"><a href="commodity.html">
+                    <div class="item bd">
+                        <div class="bd pr" style="width: 100%; height: 75%;">
+                            <img src="/img/commodity/ZE.U.2.4 迴旋鏢型飛碟.png" alt="" width="300" height="300" class="item-img">
+                            <h3>ZE.U.2.4 迴旋鏢型飛碟</h3>
+                        </div>
+                        <div class="bd pr" style="width: 100%; height: 25%;">
+                            <h4>$20,000</h4>
+                            <button class="cart"><img src="/p.jpg" alt="" width="70" height="70"></button>
+                        </div>
+                    </div>
+                </a></li>
+
+            <li class="grid-item cf-5"><a href="">
+                    <div class="item bd">
+                        <div class="bd pr" style="width: 100%; height: 75%;">
+                            <img src="/img/commodity/意識衝擊☆脈衝波☆.png" alt="" width="300" height="300" class="item-img">
+                            <h3>意識衝擊☆脈衝波☆</h3>
+                        </div>
+                        <div class="bd pr" style="width: 100%; height: 25%;">
+                            <h4>$20,000</h4>
+                            <button class="cart"><img src="/p.jpg" alt="" width="70" height="70"></button>
+                        </div>
+                    </div>
+                </a></li>
+
+            <li class="grid-item cf-4"><a href="">
+                    <div class="item bd">
+                        <div class="bd pr" style="width: 100%; height: 75%;">
+                            <img src="/img/commodity/記憶消除激光裝置.png" alt="" width="300" height="300" class="item-img">
+                            <h3>記憶消除激光裝置</h3>
+                        </div>
+                        <div class="bd pr" style="width: 100%; height: 25%;">
+                            <h4>$20,000</h4>
+                            <button class="cart"><img src="/p.jpg" alt="" width="70" height="70"></button>
+                        </div>
+                    </div>
+                </a></li>
+
+            <li class="grid-item cf-1"><a href="">
+                    <div class="item bd">
+                        <div class="bd pr" style="width: 100%; height: 75%;">
+                            <img src="/img/commodity/阻斷基地台 Pro Max2.0.png" alt="" width="300" height="300" class="item-img">
+                            <h3>阻斷基地台 Pro Max2.0</h3>
+                        </div>
+                        <div class="bd pr" style="width: 100%; height: 25%;">
+                            <h4>$20,000</h4>
+                            <button class="cart"><img src="/p.jpg" alt="" width="70" height="70"></button>
+                        </div>
+                    </div>
+                </a></li>
+
+            <li class="grid-item cf-2"><a href="">
+                    <div class="item bd">
+                        <div class="bd pr" style="width: 100%; height: 75%;">
+                            <img src="/p.jpg" alt="" width="300" height="300" class="item-img">
+                            <h3>商品名稱2-1</h3>
+                        </div>
+                        <div class="bd pr" style="width: 100%; height: 25%;">
+                            <h4>$20,000</h4>
+                            <button class="cart"><img src="/p.jpg" alt="" width="70" height="70"></button>
+                        </div>
+                    </div>
+                </a></li>
+
+            <li class="grid-item cf-2"><a href="">
+                    <div class="item bd">
+                        <div class="bd pr" style="width: 100%; height: 75%;">
+                            <img src="/p.jpg" alt="" width="300" height="300" class="item-img">
+                            <h3>商品名稱2-2</h3>
+                        </div>
+                        <div class="bd pr" style="width: 100%; height: 25%;">
+                            <h4>$20,000</h4>
+                            <button class="cart"><img src="/p.jpg" alt="" width="70" height="70"></button>
+                        </div>
+                    </div>
+                </a></li>
+
+            <li class="grid-item cf-4"><a href="">
+                    <div class="item bd">
+                        <div class="bd pr" style="width: 100%; height: 75%;">
+                            <img src="/p.jpg" alt="" width="300" height="300" class="item-img">
+                            <h3>商品名稱4-2</h3>
+                        </div>
+                        <div class="bd pr" style="width: 100%; height: 25%;">
+                            <h4>$20,000</h4>
+                            <button class="cart"><img src="/p.jpg" alt="" width="70" height="70"></button>
+                        </div>
+                    </div>
+                </a></li>
+
+            <li class="grid-item cf-3"><a href="">
+                    <div class="item bd">
+                        <div class="bd pr" style="width: 100%; height: 75%;">
+                            <img src="/p.jpg" alt="" width="300" height="300" class="item-img">
+                            <h3>商品名稱3-1</h3>
+                        </div>
+                        <div class="bd pr" style="width: 100%; height: 25%;">
+                            <h4>$20,000</h4>
+                            <button class="cart"><img src="/p.jpg" alt="" width="70" height="70"></button>
+                        </div>
+                    </div>
+                </a></li>
+
+            <li class="grid-item cf-5"><a href="">
+                    <div class="item bd">
+                        <div class="bd pr" style="width: 100%; height: 75%;">
+                            <img src="/p.jpg" alt="" width="300" height="300" class="item-img">
+                            <h3>商品名稱5-2</h3>
+                        </div>
+                        <div class="bd pr" style="width: 100%; height: 25%;">
+                            <h4>$20,000</h4>
+                            <button class="cart"><img src="/p.jpg" alt="" width="70" height="70"></button>
+                        </div>
+                    </div>
+                </a></li>
+
+        </ul>
+    </div> -->
+
+    <script>
+        // 同位素
+        var iso = new Isotope('.grid', {
+            itemSelector: '.grid-item',
+            layoutMode: 'fitRows'
+        });
+
+        var filtersElem = document.querySelector('.classification');
+        filtersElem.addEventListener('click', function (event) {
+            // only work with buttons
+            if (!matchesSelector(event.target, '.cf-btn')) {
+                return;
+            }
+            var filterValue = event.target.getAttribute('data-filter');
+            iso.arrange({ filter: filterValue });
+        });
+
+        // change is-checked class on buttons
+        var buttonGroups = document.querySelectorAll('.button-group');
+        for (var i = 0, len = buttonGroups.length; i < len; i++) {
+            var buttonGroup = buttonGroups[i];
+            radioButtonGroup(buttonGroup);
+        }
+
+        function radioButtonGroup(buttonGroup) {
+            buttonGroup.addEventListener('click', function (event) {
+                // only work with buttons
+                if (!matchesSelector(event.target, '.cf-btn')) {
+                    return;
+                }
+                buttonGroup.querySelector('.is-checked').classList.remove('is-checked');
+                event.target.classList.add('is-checked');
+            });
+        }
+    </script>
+
+
+
+<hr style="border: 1px white solid; opacity: 100%;">
+
+<div class="container " style="margin-top: 50px; margin-bottom: 50px;">
+  <div class="row">
+
+    <div class="col-lg-6 bd" style="padding: 0 50px; height: 300px;">
+      <p style="color: #3fffbe; font-family: f2b; font-size: 18pt; text-align: center; margin: 28px 0;">CONTACT</p>
+      <form action="" class="ipt">
+        <div class="row" style="height: 135px;">
+          <div class="col-6 bd">
+            <input class="iptbox" type="text" placeholder="NAME">
+            <input class="iptbox" type="text" placeholder="ET-MAIL">
+            <input class="iptbox" type="text" placeholder="TITLE" style="margin-bottom: 0;">
+          </div>
+          <div class="col-6 bd">
+            <textarea class="iptbox wh100" name="message" style="resize: none;" placeholder="MESSAGE"></textarea>
+          </div>
+        </div>
+      </form>
+      <div class=" d-flex justify-content-end" style="margin-top: 20px;"><input type="submit" value="SUBMIT" style="background-color: #3fffbe; color: black; font-size: 12pt; font-family: f3; padding:10px 15px; border-radius: 30px;"></div>
+    </div>
+
+    <div class="col-lg-6 bd" style="height: 300px;">
+      <p style="color: #3fffbe; font-family: f2b; font-size: 18pt; text-align: center; margin: 28px 0;">MORE</p>
+      <div class="bd" style="font-size: 18pt; font-family: f2;">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Est fugit voluptatum doloribus a dicta? Magni ab odio cum suscipit delectus? Impedit et ullam aperiam neque sapiente aliquid nam minus animi!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum facilis ipsa libero excepturi, magni eligendi distinctio labore. A nostrum necessitatibus officia debitis alias, iusto excepturi omnis quia vel, laborum hic!
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="container bd">
+  <hr style="border: 1px white solid; opacity: 20%;">
+  <p style="padding: 40px 0; color: #8c8c8c; font-family: F2; font-size: 16pt; ">© 2022 Biological Research Group . All rights reserved.</p>
+</div>
+
+<script>
+    var Product;
+    var productVue = new Vue({
+        el: "#product",
+        data: {
+            product: []
+        }
+    })
+
+    $.get("/product", function (data, status) {
+            if (status == "success") {
+                Product = data;
+                productVue.product = Product;
+            }
+        })
+
+        $(".cf-btn").click(function(e){
+            var classname=$(this).data("filter");
+            productVue.product = Product.filter(function(item){return item.classname.indexOf(classname)>=0;})
+        }   )
+
+        $('body').on('click','img',function(i){
+            var target = $(event.target);
+            if(target.is("#button1")){
+                //window.location.href = "commodity.html";
+                alert("1");
+            }else if(target.is("#button2")){
+                alert("2");
+            }else if(target.is("#button3")){
+                alert("3");
+            }else if(target.is("#button4")){
+                alert("4");
+            }else if(target.is("#button5")){
+                alert("5");
+            }else if(target.is("#button6")){
+                alert("6");
+            }else if(target.is("#button7")){
+                alert("7");
+            }else if(target.is("#button8")){
+                alert("8");
+            }else if(target.is("#button9")){
+                alert("9");
+            }
+            
+            // var target1 = "#product1";
+            // if(p_name == target1){
+            // window.location.href = "commodity.html";
+            // }
+        })
+
+</script>
+
+</body>
+
+</html>

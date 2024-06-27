@@ -1,0 +1,168 @@
+.unit{
+    height: 880px;
+    /* padding-top: 260px; */
+}
+.bd{
+    border: 1px solid rgb(209, 137, 137);
+    border: 1px solid transparent;
+}
+.bdr{
+    border: 1px solid red;
+
+}
+.fr{
+    float: right;
+}
+.fl{
+    float: left;
+}
+.pr{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.wh100{
+    height: 100%;
+    width: 100%;
+}
+.pa{
+    position: absolute;
+}
+body{
+    background-color: #1a1e1c;
+    /* background-image: url(/img/vector-seamless-background-triangulation-polygonal-mesh-spider-loop-texture-208059220.jpg); */
+}
+*{
+    color: white;
+}
+.dr{ 
+    text-align:right;
+    margin:0px auto 0px auto;
+}
+
+
+@font-face{
+    font-family: "f1";
+    src: url("/font/Alexana\ Neue.ttf");
+}
+@font-face{
+    font-family: "f2";
+    src: url("/font/分頁按鈕tw\ cen_細.TTF");
+}
+@font-face{
+    font-family: "f2b";
+    src: url("/font/分頁按鈕tw\ cen_粗.TTF");
+}
+@font-face{
+    font-family: "f3";
+    src: url("/font/ERASBD.TTF");
+}
+
+
+
+
+
+
+
+
+
+.navbox{
+    position: sticky;
+    top: 0;
+    /* margin-top: 20px; */
+    z-index: 5;
+}
+.logo{
+    margin-top: 30px;
+}
+.logo a{
+    color: white;
+    font-size: 24pt;
+    font-family: f2b;
+}
+.logo img {
+    margin-right: 20px;
+    transform: translateY(-5%);
+}
+.nav-btn{
+    margin: 0 25px;
+    padding:0px 20px;
+    padding-top: 50px;
+    z-index: 1;
+    /* transition: all 0.3s ease; */
+    position: relative;
+    color: white;
+    font-family: "f2b";
+    letter-spacing: 2px;
+    font-size: 15pt;
+
+
+}
+.nav-btn:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height:30px;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #1a1e1c;
+    transition: all 0.3s ease;
+    border: 1px solid white;
+
+
+}
+.nav-btn:hover:after {
+    height: 105%;
+    background-color: #3fffbe;
+    border: 1px solid transparent;
+
+}
+.nav-btn:hover{
+        color: black;
+        /* font-family: f2b; */
+}
+
+.nav-btn-on{
+    margin: 0 25px;
+    padding:2px 20px;
+    border: 1px solid black;
+}
+
+.btn-up{
+    width: 60px;
+    height: 60px;
+    background-color: #3fffbe;
+    color: white;
+    font-size: 20pt;
+    font-family: f3;
+}
+
+
+
+
+
+.ipt input{
+    margin-bottom: 20px;
+    width: 100%;
+    height: 35px;
+}
+
+
+.iptbox{
+    background-color: #1a1e1c;
+    border: 1px solid white;
+    color: white;
+    font-family: f2;
+    font-size: 16pt;
+    padding: 0 16px;
+  }
+
+.pageButtom {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    /* background-image: url(/img/頁腳_月球表面.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
